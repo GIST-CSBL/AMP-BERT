@@ -15,4 +15,4 @@ Hojung Nam* (hjnam@gist.ac.kr)
 *Corresponding Author
 
 ## Overview Figure
-![alt text](Fig1_Overview.tif)
+![OverviewFigure](Fig1_Overview.tif)
