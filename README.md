@@ -15,4 +15,4 @@ Hojung Nam* (hjnam@gist.ac.kr)
 *Corresponding Author
 
 ## Overview Figure
-![alt text](https://github.com/GIST-CSBL/AMP-BERT/blob/main/Fig1_Overview.tif?raw=true)
+![alt text](Fig1_Overview.tif)
