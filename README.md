@@ -19,4 +19,4 @@ Hojung Nam* (hjnam@gist.ac.kr)
 *Corresponding Author
 
 ## Model Overview
-![OverviewFigure]([Fig1_Overview.png](https://user-images.githubusercontent.com/20834601/201010199-a460b790-4834-4360-a8f2-d3da68abae41.png))
+![OverviewFigure]([Fig1_Overview.png])
