@@ -1,14 +1,19 @@
-# AMP-LoRAgen: Generation of species-aware antimicrobial peptides using GPT and Low-Rank Adaptation
+# AMP-BERT: Prediction of Antimicrobial Peptide Function Based on a BERT Model
 
 ## Abstract
-Antimicrobial peptides (AMPs) have emerged as promising alternatives to traditional antibiotics due to their broad-spectrum activity and low propensity for inducing resistance. However, the discovery and design of potent, species-aware AMPs remain challenging due to limited availability of training data. Recent advances in natural language processing, particularly the development of parameter-efficient fine-tuning on Generative Pre-trained Transformer (GPT) models, have shown promise in generating biologically relevant sequences. In this study, we present a protein language modeling approach for generating potent, species-aware AMP sequences using a GPT model enhanced with parameter-efficient fine-tuning. Building upon a pre-trained GPT model trained on 44.88 million peptide sequences to capture general peptide characteristics, we implemented Low-Rank Adaptation (LoRA) fine-tuning using curated species-specific AMP sequences to generate AMPs tailored to specific microbial species. The performance of the LoRA fine-tuned GPT model was evaluated using physicochemical property analysis, AMP activity, and hemolytic activity predictions. Our results demonstrate that the parameter-efficient LoRA method significantly improves the model's ability to generate potent AMP sequences, outperforming other deep learning-based AMP generation models. We further analyzed species-awareness of the generated AMP sequences through species-specific minimum inhibitory concentration (MIC) predictions and confirmed that the species-aware samples are more potent than the non species-aware samples. This study showcases the potential of leveraging parameter-efficient fine-tuning techniques in language models for the discovery and design of novel, species-specific antibiotics, advancing the development of targeted antimicrobial therapies.
+Antimicrobial resistance is a growing health concern. Antimicrobial peptides (AMPs) disrupt harmful microorganisms by non-specific mechanisms, making it difficult for microbes to develop resistance. Accordingly, they are promising alternatives to traditional antimicrobial drugs. In this study, we developed an improved AMP classification model, called AMP-BERT. We propose a deep learning model with a fine-tuned BERT architecture designed to extract structural/functional information from input peptides and identify each input as AMP or non-AMP. We compared the performance of our proposed model and other machine learning-based and deep learning-based methods. Our model, AMP-BERT, yielded the best prediction results among all models evaluated with our curated external dataset. In addition, we utilized the attention mechanism in BERT to implement an interpretable feature analysis and determine the specific residues in known AMPs that contribute to peptide structure and antimicrobial function. The results show that AMP-BERT can capture the structural properties of peptides for model learning, enabling the prediction of AMPs or non-AMPs from input sequences. AMP-BERT is expected to contribute to the identification of candidate AMPs for functional validation and drug development.
 
-## 
+## Fine-Tuning and Model Implementation with Colab
+The fine-tuned AMP-BERT model can be reproduced and implemented for the AMP prediction downstream task in this [Colab notebook](https://colab.research.google.com/drive/174Qh22KCga8E4EiJ9fc8AUAbsQzOP11b?usp=sharing).
+The pre-trained model is based on ProtBERT-BFD from [Elnaggar et al., 2021](https://doi.org/10.1109/TPAMI.2021.3095381).
+## License
+AMP-BERT follows [GPL 3.0v license](https://github.com/GIST-CSBL/AMP-BERT/blob/main/LICENSE). Therefore, AMP-BERT is open source and free to use for everyone.
 
 ## Contact
 Hansol Lee (hansol.lee@gist.ac.kr)
-
-Hojung Nam* (hjnam@gist.ac.kr)
+@@ -18,5 +12,3 @@ Hojung Nam* (hjnam@gist.ac.kr)
 
 *Corresponding Author
 
+## Model Overview
+![OverviewFigure](Fig1_Overview_final.png)
