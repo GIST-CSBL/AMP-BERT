@@ -11,7 +11,7 @@ AMP-BERT follows [GPL 3.0v license](https://github.com/GIST-CSBL/AMP-BERT/blob/m
 
 ## Contact
 Hansol Lee (hansol.lee@gist.ac.kr)
-@@ -18,5 +12,3 @@ Hojung Nam* (hjnam@gist.ac.kr)
+Hojung Nam* (hjnam@gist.ac.kr)
 
 *Corresponding Author
 
